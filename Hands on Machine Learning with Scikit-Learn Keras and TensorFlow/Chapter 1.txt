@@ -1,0 +1,76 @@
+1. How would you define Machine Learning?
+
+A: Machine Learning is the field of using statistical models learn from data in order to make generalized inference or predictions given a test set, evaluated against some performance metrics.
+
+2. Can you name four types of problems where it shines?
+
+A: Machine Learning is good for problems that cannot be solved by any one algorithm or any non complex algorithm, for ever constant fluxuating in environment, replacing long specific lists of rules, or helping humans learn, such as in unsupervised learning.
+
+3. What is a labeled training set?
+
+A: A labeled training set is a set of data where each row is specified as an instance with its corresponding label identifying what it is.
+
+4. What are the two most common supervised tasks?
+
+A: Regression, predicting a Real number value, and Classification, predicting an item from a finite set.
+
+5. Can you name four common unsupervised tasks?
+
+A: Dimensionality Reduction, Clustering, Visualization, and association rule learning.
+
+6. What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?
+
+A. using Robotics in Machine Learning is typically an application of Reinforced Learning, where the robot would attempt to walk on a terrain, fail, learn where it failed, and try again. This would be necessary for all forms of terrain.
+
+7. What type of algorithm would you use to segment your customers into multiple groups?
+
+A. This is an unsupervised Learning algorithm where you attempt to group customers via Clustering, unless we know the different groups, in which case it becomes a Supervised Learning Classification problem.
+
+8. Would you frame the problem of spam detection as a supervised learning problem or an unsupversied learning problem?
+
+A. Spam detection is Binary Classification within Supervised Learning, as we would be detecting a label of either spam or not spam.
+
+9. What is an online learning system?
+
+A. an online learning system is one where models are receiving a constant stream of data, learning from that data, and updating its model for more up to date predictions in real time, as opposed to batch learning which isn't able to adjust so frequently.
+
+10. What is out-of-core learning?
+
+A. Out-of-Core learning is a means of learning where quantities of data which cannot fit in a computer's main memory. These algorithms chop the data into batches and use online learning to learn from these batches.
+
+11. What type of learning algorithm relies on a similarity measure to make predictions?
+
+A. Instance-based learning algorithms use similarity measures to make predictions. They keep the models in memory and use distance metrics to make predictions on future instances.
+
+12. What is the difference between a model parameter and a learning algorithm hyperParameters?
+
+A. A hyperParameter is a value or parameter we can adjust on a model to fine tune your models to your data. Model Parameters are the values within the algorithm itself that are changed by the data as the model learns and tunes itself to the data. HyperParameters can be physically changed by the developer while model parameters are changed by the data, unaccessible to developers
+
+13. What do model based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?
+
+A. Model based algorithms search for the best parameter values (model parameters) based on the training data. The best fit for the data. A common strategy they use to accomplish this is by trying to find the lowest cost function values. They make predictions by putting the values into this model with the model parameters and this model is then evaluated.
+
+14. Can you name four of the main challenges in Machine Learning?
+
+A. Main challenges in Machine Learning are dealing with unbalanced data, lack of data, poor quality in data, poor features, poor model fit, and overfit models.
+
+15. If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?
+
+A. This situation is called overfitting to our training set, where we think the training set is an ideal representation of all possible scenarios, and thus real world generalizations do not perform well in our model. Solutions would be acquiring more data to train with, reduce the complexity of the model so that it can be less fit to our training set, and reducing noise within our data that our model might be fitting against.
+
+
+16. What is a test set and why would you want to use it?
+
+A. A test set is the set of data used to verify how well your model works. By using a test set you can verify if it generalizes well to new data and new instances, ensuring the highest accuracy in the model.
+
+17. What is the purpose of a validation set?
+
+A. A validation set differs from a testing set because while a testing set is useful for verifying the final form of a model, the validation set is used when modifying hyperparameters trying to optimize your model. Your model will be tuned from the validation set, while the testing set is new data the model hasn't seen before.
+
+18. What is the train-dev set, when do you need it and when do you use it?
+
+A. the train-dev set allows us to check
+
+19. What can go wrong if you tune hyperParameters using the test set?
+
+A. If your model is tuned with testing data and then tested again, you can expect false positive results in accuracy as the model knows of the validation data already and thus will perform well on it.
