@@ -203,3 +203,45 @@ Make sure you refactor when you stumble upon issues and keep that mindset going 
 While you are coding, keep in mind to code in a manner that is easily testable. If you are writing functionality correctly, you should be able to independently test those units of work. If you are designing by contract you should be able to test against your contracts as well. Leverage testing harnesses to easily write tests for your application rather than designing your own harness entirely. Ensure you leverage some kind of test window so you can easily see what passed, what failed, and why tests failed. Write tests for everything you add so that if something breaks you know quickly.
 
 Finally, be sure not to over utilize wizards for setting up new environments or projects. These wizards can bloat your projects with things you don't understand or don't need. Sometimes it is necessary to start a project with some things preconfigured, but be sure you know what you need and why you need it if you go this route.
+
+## Chapter 7 Before the Project
+
+There are a number of things to keep in your mind before you start a project. Things like setting requirements, solving the overarching problem, and specifying a project correctly.
+
+Make sure when setting requirements for a project to dig enough for them. You want to ensure you're digging by considering the correct set of circumstances. Your use cases on who accesses what and in what scenarios should be thoroughly researched. When you figure out what your requirements are, make sure to document your requirements correctly. You can do this through various documentation procedures, such as a use case template which specifies various use cases for specific situations. You can also specify use cases by using a UML diagram to show interactions between various actors, or users. Be careful not to overspecify. You want to have an overarching design, not details. As the author states, Abstractions live longer than details. Make sure as well if you need to, to maintain a glossery of all terminology for this project and publish all your documentation for the teams that need to be aware.
+
+Make sure not to get stuck trying to solve Impossible Puzzles. This means not to get stuck trying to find an optimal solution to a problem that might need an outside the box solution. This means that maybe the solution is to use a different framework, or approach the solution with a different process entirely. A good way to consider this is to look at your constraints and consider alternative ways to have an interaction play out. Think of the following concepts:
+- Is there an easier way?
+- Are you solving the right problem?
+- Why is this thing a problem?
+- What is it that is making it so hard to solve?
+- Does it have to be done this way?
+- Does it have to be done at all?
+
+Don't start programming until you're ready. If you have any doubts, investigate them before you proceed to coding. Even if you don't have anything 'done' that doesn't mean you aren't doing anything. Make sure to thoroughly investigate everything you need to in order to feel ready to begin.
+
+Make sure to specify as much as needed in the project, but that doesn't mean specify everything. You cannot specify everything and will most likely specify for the duration of the project if you tried to. You can alternatively describe things generally than to try and specify them in details.
+
+When writing your design documents, use whatever works for what you need to describe. This means don't use UML diagrams for the sake of using UML diagrams. As the author also says, Expensive Tools Do Not Produce Better Designs. So use the tools that work for your team and product leads. Ensure you use the best tools for your team.
+
+## Chapter 8 Pragmatic Projects
+
+When working on projects make sure everyone is ontop of what they need to do. Automate what you can, testing all the code you need to, and have teams that stay ontop of the work they need to do.
+
+Ensure you have Pragmatic teams. This means your team should stay ontop of quality of your project. Do not let any problems persist and tackle them as they come up. Communicate your problems properly and don't repeat yourself (DRY) either in person or in code. Ensure the team functions with orthogonality and writes this way as well. This means your teams should be organized functionaly, not around job functions. A good example of this is organizing your team by the work being done and not because they're all engineers. Your team should automate whatever takes them too much time to manually do, and ensure they know when a project is done and to stop dressing it up.
+
+Automate everything you can and do your best not to rely on manual procedures. Compiling code and generating any code you need to should all be automated as well. Testing should not be manual and should be automated as changes occur in your code. When you automate these things, they ideally should be automated into one whole process. Check out the source code, build the projects, get a distrubtable image of the project, and run the specified tests against this build. Final builds of your project should be tagged and kept separate of your normal process as well. Automate any administrative tasks that you need to manually do as well. This includes web site generation, approval procedures, etc.
+
+Test Early, Test Often, Test automatically. Ensure that when you write code you write tests for every feature you add. This means unit tests for individual pieces, integration tests for multiple pieces, as well as any performance testing or UI testing if needed. These tests should all be automated as much as possible and as early as possible. Make sure you are testing thoroughly and relentlessly to ensure your application stands the test of resiliency. Use pre-existing data for tests if you need to stress the system or test hard to recreate specific scenarios. If needed, write tests for your tests to ensure they are doing what you think they are. Test your state coverage and not your code coverage. It is irrelevant if you test every line of code, but more important that every state a user can get into is covered. Another important note on testing is that if a bug if found, write a test to ensure that the bug is fixed. This test should always exist so that the bug you found can never show itself again.
+
+Use all the documentation necessary to clearly assist your code. By treating english as another programming language, you can add on a lot to the worth of your code. This means adding documentation to your code by means of comments, where the comments specify overarching reasons for a process and not needlessly duplicating code meaning. Things you do not want to comment on are
+- List of functions exported by code
+- Revision history
+- A list of other files this file uses
+- The name of the file
+
+Ensure any executable documents you have line up with your code and are only created in one place. Doing otherwise would violate DRY principle. Also don't think of writing as just for internal use. External APIs are much more popular these days and thus being able to write documentation for people outside your code base is becoming very important. It is also important to write these documents so those not on your team but are internal can also understand your procedures correctly. Try to ensure your documentation can be produced by your code if possible. This can be done with markup languages as well.
+
+Be sure to hit expectations and then go a bit beyond. Always communicate these expectations so you know where the finish line is at all times. Don't ever go above and beyond as what you feel is a 'nice to have' ends up a surprise to your team, leads, and the customer. Surprises can be good, but they can also be very bad, and anything you surprise people with is a potential ticking time bomb.
+
+When all is done, take pride in your work, and take pride in what you do. Be proud to put your name on whatever you create, like anyone would with their craft. Work on it regularly, and ensure that you are a Pragmatic Programmer.
